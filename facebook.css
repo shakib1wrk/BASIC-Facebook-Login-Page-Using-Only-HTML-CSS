@@ -1,0 +1,143 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: "poppins", sans-serif;
+    background-color: whitesmoke;
+}
+
+.full_div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
+.flex-div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.name-content{
+    margin-right: 7rem;
+}
+
+.name-content, .logo{
+    color: #1877f2;
+    font-size: 3.5rem;
+}
+.tagline{
+    color: black;
+    font-size: 1.3rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    width: 500px;
+    height: 390px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%)
+
+}
+
+form input{
+    outline: none;
+    padding: 15px 15px;
+    margin-bottom: 18px;
+    border-radius: 7px;
+    font-size: 1.1rem;
+    border: 1px solid lightgrey;
+
+}
+
+form .login{
+    outline: none;
+    border: none;
+    background-color: #1877f2;
+    color: white;
+    padding: 15px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: bold;
+
+    
+}
+
+.forgot{
+    padding-top: 10px;
+    text-align: center;
+    color: #1877f2;
+}
+
+form hr{
+    background: #f7f7f7;
+    margin: 1rem;
+
+}
+.create-account{
+    outline: none;
+    border: none;
+    background-color: #03ad06;
+    font-size: larger;
+    color: white;
+    font-weight: bolder;
+    padding: 15px;
+    width: 250px;
+    border-radius: 7px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    html {
+      font-size: 60%;
+    }
+  
+    .name-content {
+      margin: 0;
+      text-align: center;
+    }
+  
+    form {
+      width: 300px;
+      height: fit-content;
+    }
+  
+    form input {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+  
+    form .login {
+      font-size: 1.5rem;
+    }
+  
+    form a {
+      font-size: 1.5rem;
+    }
+  
+    form .create-account {
+      font-size: 1.5rem;
+    }
+  
+    .flex-div {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    @media (orientation: landscape) and (max-height: 500px) {
+      .header {
+        height: 90vmax;
+      }
+    }  
+  }
+  
